@@ -2,7 +2,7 @@
 
 Welcome to the Python Learning Playground! 🚀
 
-Dive into the world of Python programming with our interactive and beginner-friendly repository. Whether you're taking your first steps in coding or looking to enhance your Python skills, this repository is your go-to resource.
+Dive into the world of Python programming with our interactive and beginner-friendly repository. This repository is inspired by and based on the fantastic work of [Pierian Data](https://github.com/Pierian-Data/Complete-Python-3-Bootcamp.git) and their "Complete Python 3 Bootcamp" repository.
 
 ## What's Inside:
 
