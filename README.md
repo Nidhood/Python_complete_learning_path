@@ -15,7 +15,7 @@ Dive into the world of Python programming with our interactive and beginner-frie
 ## Getting Started:
 
 1. Clone the repository to your local machine.
-2. Explore the structured learning modules in the `tutorials` directory.
-3. Dive into projects and challenges in the `projects` directory.
+2. Explore the structured learning modules in the `Tutorials` directory.
+3. Dive into projects and challenges in the `Projects` directory.
 
 Happy coding! 🐍✨
