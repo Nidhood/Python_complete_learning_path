@@ -41,15 +41,13 @@ def backward_substitution(LT, z):
 
 # Example matrix A (symmetric) and vector b
 A = np.array([
-    [2, -1, 0, 0, 0],
-    [-1, 2, -1, 0, 0],
-    [0, -1, 2, -1, 0],
-    [0, 0, -1, 2, -1],
-    [0, 0, 0, -1, 2]
+    [2, -1, 0],
+    [-1, 2, -1],
+    [0, -1, 2]
 
 ], dtype=float)
 
-b = np.array([5.0, -5.0, 4.0, -5.0, 5.0], dtype=float)
+b = np.array([3, -3, 1], dtype=float)
 # Perform LDLᵀ decomposition
 L, D = LDLT_decomposition(A)
 LT = L.T  # Transpose of L

@@ -45,11 +45,15 @@ def backward_substitution(U, y):
     return x
 
 # Example matrix A and vector b
-A = np.array([[2, -1, 1],
-              [3, 3, 9],
-              [3, 3, 5]], dtype=float)
+A = np.array([
 
-b = np.array([3, 0, 4], dtype=float)
+    [1, 1, -1, 0],
+    [1, 1, 4, 3],
+    [2, -1, 2, 4],
+    [2, -1, 2, 5]
+              ], dtype=float)
+
+b = np.array([10, -15, 20, 5], dtype=float)
 
 # Perform PLU decomposition
 P, L, U = PLU_decomposition(A)
