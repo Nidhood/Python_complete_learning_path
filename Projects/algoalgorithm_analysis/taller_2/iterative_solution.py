@@ -45,7 +45,7 @@ def calculo_intersecciones(S):
             x_u_j, y_u_j = S[j][0]
             x_d_j, y_d_j = S[j][1]
 
-            # Conseguimos las coordenadas del rectangulo intersección:
+            # Conseguimos las coordenadas del rectangulo interseccion:
             x_izq = max(x_u_i, x_u_j)
             x_der = min(x_d_i, x_d_j)
             y_arr = min(y_u_i, y_u_j)
@@ -53,13 +53,13 @@ def calculo_intersecciones(S):
 
             if x_izq < x_der and y_aba < y_arr:
 
-                # Obtenemos el largo del rectangulo intersección:
+                # Obtenemos el largo del rectangulo interseccion:
                 largo = x_der - x_izq
 
-                # Obtenemos el ancho del rectangulo intersección:
+                # Obtenemos el ancho del rectangulo interseccion:
                 ancho = y_arr - y_aba
 
-                # Calculamos el area del rectangulo intersección:
+                # Calculamos el area del rectangulo interseccion:
                 area = largo * ancho
                 I.append(area)
             # end if
