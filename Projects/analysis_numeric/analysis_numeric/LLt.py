@@ -35,12 +35,11 @@ def backward_substitution(LT, y):
 
 # Example symmetric positive definite matrix A and vector b
 A = np.array([
-    [4, 1, 1, 1],
-    [1, 3, -1, 1],
-    [1, -1, 2, 0],
-    [1, 1, 0, 2]], dtype=float)
+    [4, 2, -4],
+    [2, 10, 4],
+    [-4, 4, 9]], dtype=float)
 
-b = np.array([0.65, 0.05, 0, 0.5], dtype=float)
+b = np.array([-2, 6, 11], dtype=float)
 
 # Perform LLᵀ decomposition
 L = cholesky_decomposition(A)
@@ -59,4 +58,5 @@ y = forward_substitution(L, b)
 x = backward_substitution(LT, y)
 
 # Print solution
+print("\nSolution y:\n", y)
 print("\nSolution x:\n", x)

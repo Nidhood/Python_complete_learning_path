@@ -41,13 +41,13 @@ def backward_substitution(LT, z):
 
 # Example matrix A (symmetric) and vector b
 A = np.array([
-    [2, -1, 0],
-    [-1, 2, -1],
-    [0, -1, 2]
+    [2, 2, -1],
+    [2, 3, 2],
+    [-1, 2, 4]
 
 ], dtype=float)
 
-b = np.array([3, -3, 1], dtype=float)
+b = np.array([2, 6, 8], dtype=float)
 # Perform LDLᵀ decomposition
 L, D = LDLT_decomposition(A)
 LT = L.T  # Transpose of L
@@ -57,14 +57,12 @@ print("\nL matrix:\n", L)
 print("\nD matrix:\n", D)
 print("\nLᵀ matrix:\n", LT)
 
-# Verify decomposition: A = L D Lᵀ
-A_reconstructed = L @ D @ LT
-print("\nReconstructed A (should match original A):\n", A_reconstructed)
-
 # Solve Ax = b using LDLᵀ decomposition
 y = forward_substitution(L, b)
 z = diagonal_substitution(D, y)
 x = backward_substitution(LT, z)
 
 # Print solution
+print("\nSolution y:\n", y)
+print("\nSolution z:\n", z)
 print("\nSolution x:\n", x)

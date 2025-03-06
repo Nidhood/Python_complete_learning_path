@@ -24,8 +24,6 @@ def PLU_decomposition(A):
             L[j, i] = U[j, i] / U[i, i]
             U[j] -= L[j, i] * U[i]  # Row operation to make U upper triangular
 
-            print(f"L_{j+1}{i+1} = {L[j, i]:.4f}")
-
     return P, L, U
 
 def forward_substitution(L, Pb):
@@ -47,21 +45,20 @@ def backward_substitution(U, y):
 # Example matrix A and vector b
 A = np.array([
 
-    [1, 1, -1, 0],
-    [1, 1, 4, 3],
-    [2, -1, 2, 4],
-    [2, -1, 2, 3]
-              ], dtype=float)
+    [1, 1, 1],
+    [2, 3, 2],
+    [1, 1, 2]], dtype=float)
 
-b = np.array([10, -15, 20, 5], dtype=float)
+b = np.array([6, 14, 8], dtype=float)
 
 # Perform PLU decomposition
 P, L, U = PLU_decomposition(A)
 
 # Print results
-print("\nP matrix:\n", P)
-print("\nL matrix:\n", L)
 print("\nU matrix:\n", U)
+print("\nL matrix:\n", L)
+print("\nP matrix:\n", P)
+
 
 # Verify decomposition: PA = LU
 PA = P @ A
