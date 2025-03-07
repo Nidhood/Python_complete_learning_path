@@ -120,10 +120,11 @@ def gauss_seidel(A, b, tol=0.000001):
 
 # Sistema de ecuaciones
 A = np.array([
-    [4, 1, -1],
-    [-1, 3, 1],
-    [2, 1, 5]],
-    dtype=float)
+    [4, -1, 1],
+    [-1, 3, -2],
+    [2, -2, 5]
+], dtype=float)
+
 b = np.array([5, -4, 1], dtype=float)
 
 # Calculamos la matriz Tj

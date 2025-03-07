@@ -35,12 +35,12 @@ def backward_substitution(U, y):
 
 # Example matrix A and vector b
 A = np.array([
+    [4, -1, 1],
+    [-1, 3, -2],
+    [2, -2, 5]
+], dtype=float)
 
-    [1, 1, 1],
-    [2, 3, 2],
-    [1, 1, 2]], dtype=float)
-
-b = np.array([6, 14, 8], dtype=float)
+b = np.array([5, -4, 1], dtype=float)
 
 # Perform LU decomposition
 L, U = lu_doolittle(A)
