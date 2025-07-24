@@ -51,7 +51,7 @@ fig.savefig('plot_results/seasonal_bike_rentals.png', dpi=300, bbox_inches='tigh
 
 # 2. What are the times of day and days of the week when I will have the highest demand by user type?
 # We select the usefully fields for the answer:
-# -> hr         ( Numerical variable )   : Represents hour of the day.
+# -> hr         ( Categorical variable )   : Represents hour of the day.
 # -> weekday    ( Categorical variable ) : Represents day of the week.
 # -> cnt        ( Numerical variable )   : Represents count of total rental bikes including both casual and registered.
 
